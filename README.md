@@ -48,18 +48,6 @@ Decision bounds are part of the definition:
 
 The accompanying evaluation protocol, described in the paper, is held fixed across methods. It builds reference sets from the problem definitions, estimates each returned decision by an independent perturbation sample, keeps the non-dominated effective set, and scores that set with fixed-reference hypervolume (HV) and modified inverted generational distance (IGD+). Basin retention is recorded separately from final-set quality and front coverage.
 
-## What the controlled comparisons show
-
-The main controlled comparison starts from shared decisions in the fragile region, or from paired samples of both basin centers. With the same initial decisions available to every method, the suite separates basin retention from the HV and IGD+ of the final effective set.
-
-On the displaced starts of RCC1–RCC6, the nominal algorithms NSGA-II and SMS-EMOA retain a high fraction of fragile-basin solutions (median retention 73%–99.5%). NSGA-II-DT1, which evaluates the Type-I mean directly, leaves that basin (0%–3.5%). All 42 pairwise comparisons of this retention outcome are significant after Holm adjustment (`p = 0.00433`).
-
-The same controlled setting also separates methods by geometry. On RCC2, NSGA-II-DT1 leads NSGA-II and SMS-EMOA on both HV and IGD+ (`p = 0.00433`). RCC7 places a local improvement inside the conflict interval against coverage of the rest of the front. Across the 21 RCC problem–initialization combinations, LR-MOEA is weaker overall than NSGA-II, MOEA/D, and SMS-EMOA: 115 of the 126 indicator comparisons are significant.
-
-Rankings also move with the experiment settings. As the perturbation ratio `ρ` increases from 0 to 0.10, the HV leader on the RCC problems is most often RMOEA-SuR for `ρ ≤ 0.025` and most often LR-MOEA for `ρ ≥ 0.05`. At `D ∈ {10, 15, 20}`, a fixed evaluation budget lowers rank consistency; raising the budget to `2000D` improves most of the tested methods.
-
-Read together, these results describe a diagnostic use. Given a start at which both basins compete, RCC-Bench exposes how a search method trades basin retention, perturbation-sampling cost, front coverage, and evaluation budget. Random-start rankings, and the RE21 engineering comparison, address a different question: they do not by themselves produce a stable gap between robust methods, nominal methods, and the engineering case.
-
 ## Repository contents
 
 | File | Role |
