@@ -17,7 +17,7 @@ This repository distributes the benchmark definitions only: RCC1–RCC7 and the 
 
 RCC-Bench is a diagnostic benchmark for Type-I robust multi-objective evolutionary optimization under decision-variable perturbations. In the Type-I model of Deb and Gupta (2006), each objective is replaced by its mean in a neighborhood of the decision. A decision that is attractive on the unperturbed landscape can then become inferior once that neighborhood is taken into account. The suite is built to make this robustness–convergence conflict explicit, and to connect a search method’s basin decisions with the quality of the set it returns.
 
-The study pairs seven new bi-objective problems, RCC1–RCC7, with nine existing landscapes, TP1–TP9. TP1–TP5 follow Gaspar-Cunha, Ferreira, and Recio (2014). TP6–TP9 are Problems 1–4 of Deb and Gupta (2006), in that order. The reported experiments cover nine evolutionary methods, spanning robust methods, nominal multi-objective evolutionary algorithms, and LR-MOEA, together with the engineering model RE21 and a small-budget surrogate comparison.
+The study pairs seven new bi-objective problems, RCC1–RCC7, with nine existing landscapes, TP1–TP9. TP1–TP5 follow Gaspar-Cunha, Ferreira, and Recio (2014). TP6–TP9 are Problems 1–4 of Deb and Gupta (2006), in that order.
 
 ## Benchmark design
 
