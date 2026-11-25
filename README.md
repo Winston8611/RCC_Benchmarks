@@ -11,7 +11,7 @@ Wenxiang Jiang<sup>1</sup>, Fangrui Bi<sup>2</sup>, and Lihong Xu<sup>1,*</sup>
 
 This repository has been accepted for publication in *Complex & Intelligent Systems*. Full bibliographic details will be updated after the article is indexed in Web of Science.
 
-This repository distributes the benchmark definitions only: RCC1–RCC7 and the TP1–TP9 problems used with them. Comparison-algorithm implementations are outside this release. The numerical result archive is deposited separately on Figshare: <https://doi.org/10.6084/m9.figshare.33320715>.
+This repository distributes the benchmark definitions only: RCC1–RCC7 and the TP1–TP9 problems used with them. The numerical result archive is deposited separately on Figshare: <https://doi.org/10.6084/m9.figshare.33320715>.
 
 ## Overview
 
