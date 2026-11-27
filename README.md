@@ -86,7 +86,3 @@ same = get_rcc_bench_problem("TP6", n_var=10)
 ```
 
 `get_problem(name, n_var=None)` accepts any registered name, ignoring case. The default dimension is 10. RCC6, TP8, and TP9 require at least three variables; every other problem requires at least two. Decisions outside `xl` and `xu` are rejected by the RCC problems.
-
-## Acknowledgements
-
-This work was supported by the National Natural Science Foundation of China (Grant No. 62373286).
