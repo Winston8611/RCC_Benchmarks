@@ -2,15 +2,6 @@
 
 **RCC-Bench: A Benchmark Suite for Robustness–Convergence Conflicts in Evolutionary Multi-objective Optimization**
 
-Wenxiang Jiang<sup>1</sup>, Fangrui Bi<sup>2</sup>, and Lihong Xu<sup>1,*</sup>
-
-<sup>1</sup> School of Electronic and Information Engineering, Tongji University, Shanghai 201804, China  
-<sup>2</sup> Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University, Shanghai 201210, China  
-
-\* Corresponding author: Lihong Xu (`xulihong@tongji.edu.cn`)
-
-This repository has been accepted for publication in *Complex & Intelligent Systems*. Full bibliographic details will be updated after the article is indexed in Web of Science.
-
 This repository distributes the benchmark definitions only: RCC1–RCC7 and the TP1–TP9 problems used with them. The numerical result archive is deposited separately on Figshare: <https://doi.org/10.6084/m9.figshare.33320715>.
 
 ## Overview
@@ -95,46 +86,6 @@ same = get_rcc_bench_problem("TP6", n_var=10)
 ```
 
 `get_problem(name, n_var=None)` accepts any registered name, ignoring case. The default dimension is 10. RCC6, TP8, and TP9 require at least three variables; every other problem requires at least two. Decisions outside `xl` and `xu` are rejected by the RCC problems.
-
-## Citation
-
-Please cite the paper if you use these definitions. The entry below will be replaced with the complete Web of Science record after indexing.
-
-```bibtex
-@article{jiang2026rccbench,
-  author  = {Jiang, Wenxiang and Bi, Fangrui and Xu, Lihong},
-  title   = {{RCC-Bench}: A Benchmark Suite for Robustness--Convergence Conflicts in Evolutionary Multi-objective Optimization},
-  journal = {Complex \& Intelligent Systems},
-  year    = {2026},
-  note    = {Accepted for publication; full citation details will be updated upon Web of Science indexing}
-}
-```
-
-The TP landscapes are included so that the RCC problems can be used beside the collection studied in the paper. Their original sources are:
-
-```bibtex
-@article{deb2006introducing,
-  author  = {Deb, Kalyanmoy and Gupta, Himanshu},
-  title   = {Introducing Robustness in Multiobjective Optimization},
-  journal = {Evolutionary Computation},
-  volume  = {14},
-  number  = {4},
-  pages   = {463--494},
-  year    = {2006},
-  doi     = {10.1162/evco.2006.14.4.463}
-}
-
-@article{gasparcunha2014evolutionary,
-  author  = {Gaspar-Cunha, Ant{\'o}nio and Ferreira, Jose and Recio, Gustavo},
-  title   = {Evolutionary Robustness Analysis for Multi-objective Optimization: Benchmark Problems},
-  journal = {Structural and Multidisciplinary Optimization},
-  volume  = {49},
-  number  = {5},
-  pages   = {771--793},
-  year    = {2014},
-  doi     = {10.1007/s00158-013-1010-x}
-}
-```
 
 ## Acknowledgements
 
